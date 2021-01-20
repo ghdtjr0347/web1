@@ -1,0 +1,42 @@
+<!--html임을 명시해준-->
+<!doctype html>
+<!--전체를 html로 묶어준다 -->
+<html>
+<!--제목과 설정은 헤드로 -->
+<head>
+  <title>table, tr, td</title>
+  <meta charset="utf-8">
+  <!--utf-8방식으로 페이지를 연다 -->
+</head>
+<!--본문은 body로 묶기로 약속 -->
+<body>
+  <h1><a href="home.html">home</a></h1>
+  <h3>table</h3>
+  table은 큰 하나의 테이블을 만듭니다.<br>
+  <ul>
+    <li>tr은 행을 의미합니다.</li>
+    <li>td는 열을 의미합니다.</li>
+    <li>border로 선굵기, cellspacing으로 선끼리 간격을 지정(border = 1, cellspacing = 0)</li>
+    <li>align을 center로 해서 표 가운데 정렬</li>
+    <li>크기를 조절하기위해 width와 height를 조절</li>
+    <li>td에 rowspan이나 colspan을 사용해 칸합침</li>
+  </ul>
+  <table border="1" cellspacing = "0" align = "center" width = "500px" height = "200px">
+    <tr align = "center">
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr >
+      <td>3</td>
+      <td rowspan = "2">4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td colspan="2">6</td>
+    </tr>
+  </table>
+</body>
+
+</html>
